@@ -1,32 +1,23 @@
-// var app=angular.module("myApp",[]);
-// app.controller("myCtrl",function ($scope) {
-//     $scope.firstName='Bob';
-//     $scope.lastName='Rob';
-//
-// });
 
-//for name filter
-// var app=angular.module("myApp",[]);
-// app.controller("myCtrl",function ($scope) {
-//
-//     $scope.names=[
-//         "praveen",
-//         "kumar",
-//         "reddy",
-//         "Pavan",
-//         "yarramalli",
-//         "venkat"
-//     ]
-//
-// });
-
-
-//for Currency filter
-
-
-var app=angular.module("myApp",[]);
-app.controller('myCtrl',function ($scope) {
-
-    $scope.rate=[8,6,5,11,23,15,29,0];
-
+var app=angular.module("myCalc",[]);
+app.factory("clcMul", function () {
+                var factory={};
+                factory.multiply=function (a,b) {
+                                             return  a * b;
+                }
+                return myCalc;
 });
+
+app.services("appServices",function (clcMul) {
+      this.square=function (a) {
+                             return calMul.multiply(a,a);
+      }
+});
+
+app.controller("appController",function (appServices) {
+                                                  $scope.square=function () {
+                                                                          $scope.result=multiply.square($scope.number);
+                                                  }
+});
+
+
