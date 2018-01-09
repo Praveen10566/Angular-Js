@@ -1,7 +1,7 @@
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope) {
-    $scope.firstname = "Manivas";
+    $scope.firstname = "Praveen";
     $scope.changeName = function() {
-        $scope.firstname = "Medishetty";
+        $scope.firstname = "Yarramalli";
     };
 });
