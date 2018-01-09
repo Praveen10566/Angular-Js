@@ -4,8 +4,8 @@
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope){
 $scope.names = [
-    {name: "manivas", city: "milpitas"},
-    {name: "ravi", city: "fremont"},
-    {name: "nisar", city: "SFO"}
+    {name: "BoB", city: "milpitas"},
+    {name: "ToM", city: "fremont"},
+    {name: "PaL", city: "SFO"}
 ]
 });
